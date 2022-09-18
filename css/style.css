@@ -229,7 +229,7 @@ p {
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-size: 40px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: #fff;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -277,31 +277,18 @@ p {
   -ms-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
 }
-.fh5co-main-nav:before, .fh5co-main-nav:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background: #e6e6e6;
-}
-.fh5co-main-nav:before {
-  top: 2px;
-}
-.fh5co-main-nav:after {
-  bottom: 2px;
-}
+
 .fh5co-main-nav .fh5co-menu-1,
 .fh5co-main-nav .fh5co-menu-2,
 .fh5co-main-nav .fh5co-logo {
-  vertical-align: middle;
-  float: left;
-  line-height: 0;
+  vertical-align: center;
+  float: center;
+  line-height: 0%;
 }
 .fh5co-main-nav .fh5co-menu-1 a,
 .fh5co-main-nav .fh5co-menu-2 a,
 .fh5co-main-nav .fh5co-logo a {
-  padding: 35px 10px;
+  padding: 10px 50px;
   color: #130d08;
   display: -moz-inline-stack;
   display: inline-block;
@@ -315,7 +302,6 @@ p {
 .fh5co-main-nav .fh5co-logo a:hover,
 .fh5co-main-nav .fh5co-logo a:focus,
 .fh5co-main-nav .fh5co-logo a:active {
-  outline: none;
   text-decoration: none;
 }
 .fh5co-main-nav .fh5co-menu-1 a.active,
@@ -331,15 +317,14 @@ p {
   vertical-align: middle;
 }
 .fh5co-main-nav .fh5co-logo {
-  text-align: center;
-  width: 19.33%;
-  font-size: 40px;
+  text-align: right;
+  font-size: 10px;
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-style: italic;
 }
 .fh5co-main-nav .fh5co-logo a {
-  position: relative;
+  position: fixed;
   top: -5px;
   display: inline-block;
 }
@@ -477,7 +462,7 @@ p {
   }
 }
 #fh5co-sayings .flexslider .slides li {
-  font-size: 40px;
+  font-size: 10px;
   line-height: 1.5;
 }
 #fh5co-sayings .flexslider .slides li blockquote {
@@ -520,8 +505,8 @@ p {
   }
 }
 #fh5co-sayings .flexslider .flex-control-paging li a {
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   background: rgba(0, 0, 0, 0.2);
   box-shadow: none;
 }
@@ -760,11 +745,11 @@ p {
 }
 
 #fh5co-menus {
-  padding: 7em 0;
+  padding: 0 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-menus {
-    padding: 5em 0;
+    padding: 5rem 0;
   }
 }
 #fh5co-menus .fh5co-heading .heading {
@@ -777,7 +762,7 @@ p {
   position: absolute;
   content: "";
   background: url(../images/0401-vegan.png) no-repeat;
-  top: 0;
+  top: 10;
   left: 50%;
   margin-top: -50px;
   margin-left: -32px;
@@ -878,7 +863,7 @@ p {
   float: right;
   width: 20%;
   text-align: right;
-  font-size: 20px;
+  font-size: 15px;
   color: #fb6e14;
 }
 
@@ -1015,29 +1000,14 @@ p {
 #fh5co-contact .fh5co-heading .sub-heading {
   color: #a99c92;
 }
-#fh5co-contact .fh5co-social {
+#fh5co-contact .fh5co-brand {
+  padding: 0;
+  width:100px;
+  height: 100px;
+}
+#fh5co-contact .fh5co-brand li {
   padding: 0;
   margin: 0;
-}
-#fh5co-contact .fh5co-social li {
-  padding: 0;
-  margin: 0;
-}
-#fh5co-contact .fh5co-contact-info {
-  padding: 0;
-  margin: 0 0 1.5em 0;
-}
-#fh5co-contact .fh5co-contact-info li {
-  position: relative;
-  padding: 0;
-  margin: 0 0 1.5em 0;
-  padding-left: 50px;
-  list-style: none;
-}
-#fh5co-contact .fh5co-contact-info li i {
-  position: absolute;
-  top: .4em;
-  left: 0;
 }
 
 #fh5co-container {
@@ -1046,17 +1016,19 @@ p {
 }
 
 #fh5co-footer {
-  width: 100%;
+  width:100%;
   background: rgba(0, 0, 0, 0.9);
-  padding: 7em 0;
+  padding: 10rem 0;
   z-index: 1;
   font-size: 14px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.5);
+  
+  
 }
 @media screen and (max-width: 768px) {
   #fh5co-footer {
-    padding: 5em 0;
+    padding: 6rem 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1065,25 +1037,30 @@ p {
     position: relative;
   }
 }
+.header .logo img{
+  height: 6rem;
+  vertical-align: right;
 
-.fh5co-social {
+}
+
+.fh5co-brand {
   padding: 0;
   margin: 0;
 }
-.fh5co-social li {
+.fh5co-brand li {
   padding: 0;
   margin: 0;
   list-style: none;
   display: inline;
 }
-.fh5co-social li a {
+.fh5co-brand li a {
   font-size: 30px;
   padding: 10px;
 }
-.fh5co-social li a i {
+.fh5co-brand li a i {
   font-size: 30px;
 }
-.fh5co-social li a:hover, .fh5co-social li a:active, .fh5co-social li a:focus {
+.fh5co-brand li a:hover, .fh5co-brand li a:active, .fh5co-brand li a:focus {
   outline: none;
   text-decoration: none;
 }
